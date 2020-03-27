@@ -1,0 +1,88 @@
+body {
+	background: #434343;
+	color: white;
+  	font-family: 'Karla', sans-serif;
+  	margin: 0;
+}
+
+.notification {
+	background: #000000;
+	color: #ff0000;
+	position: absolute;
+	top: 0;
+	text-align: center;
+	width: 100%;
+}
+
+.notificationHeader {
+	display: inline-block;
+}
+
+.notificationHeader .notificationHeaderClose {
+	position: absolute;
+	cursor: pointer;
+    right: 0;
+    top: 0;
+    padding-right: 2rem;
+    text-decoration: underline;;
+}
+
+.notificationText {
+	margin: 0;
+}
+
+
+#aboutLink {
+	color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    float: right;
+    margin: 2.5rem 4rem 0 0;
+}
+
+.logo {
+	max-width: 90px;
+}
+
+.container__about h1 {
+	margin-bottom: 0;
+    margin-top: 2rem;
+    font-size: 10rem;
+}
+
+.container__about h2 {
+	font-size: 2.5rem;
+    margin-top: 0;
+}
+
+.container__about {
+	width: 1000px;
+	min-height: 368px;
+}
+
+.container__about p {
+	margin: 0;
+}
+
+.container__button {
+	background: #E67939;
+	text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 1.25rem;
+    display: block;
+    width: 350px;
+    text-align: center;
+    font-size: 1.15rem;
+    margin-top: 6rem;
+}
+
+.container__button:hover {
+	background: white;
+	color: #434343;
+  	transition: 0.5s;
+}
+
+.about__content {
+	display: none;
+}
