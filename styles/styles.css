@@ -42,22 +42,22 @@ body {
 
 .logo {
 	max-width: 90px;
-	margin-top: 1rem;
 }
 
 .container__about h1 {
 	margin-bottom: 0;
     margin-top: 2rem;
-    font-size: 7rem;
+    font-size: 10rem;
 }
 
 .container__about h2 {
-	font-size: 1.7rem;
+	font-size: 2.5rem;
+    margin-top: 0;
 }
 
 .container__about {
 	width: 1000px;
-	min-height: 280px;
+	min-height: 368px;
 }
 
 .container__about p {
@@ -74,6 +74,7 @@ body {
     width: 350px;
     text-align: center;
     font-size: 1.15rem;
+    margin-top: 6rem;
 }
 
 .container__button:hover {
