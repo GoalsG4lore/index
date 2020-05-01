@@ -1,11 +1,22 @@
 html, body {
-  	font-family: 'Karla', sans-serif;
+  	font-family: 'Muli', sans-serif;
   	margin: 0;
   	overflow-x: hidden;
 }
 
+hr {
+	margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
 .header {
-	margin: 0 5rem;
+	margin: 0 auto;
+    max-width: 1080px;
 }
 
 .heroContainer {
@@ -14,6 +25,11 @@ html, body {
 	min-height: 730px;
 	background-repeat: no-repeat;
 	color: white;
+}
+
+.topContainer {
+	margin: 0 auto;
+	max-width: 1080px;
 }
 
 .notification {
@@ -42,12 +58,15 @@ html, body {
 	margin: 0;
 }
 
-
-#aboutLink {
+.headerLink {
 	color: #ffffff;
-    text-decoration: none;
+	text-decoration: none;
     display: inline-block;
     margin: 2.5rem 2rem 0 0;
+}
+
+.headerLink:hover {
+	border-bottom: 2px solid #ffffff;
 }
 
 .logo {
@@ -67,12 +86,7 @@ html, body {
 }
 
 .container__about h2 {
-	font-size: 1.7rem;
-}
-
-.container__about {
-	min-height: 330px;
-    margin-left: 5rem;
+	font-size: 1.25rem;
 }
 
 .container__about p {
@@ -90,6 +104,7 @@ html, body {
     text-align: center;
     font-size: 1.5rem;
     margin: 0 auto;
+    margin-top: 10rem;
 }
 
 .container__button:hover {
@@ -108,4 +123,16 @@ html, body {
 
 .box h3 {
 	text-align: center;
+}
+
+/* crap css */
+
+.btn {
+	background: white;
+	width: 150px;
+	padding: 1rem;
+	color: grey;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
 }
