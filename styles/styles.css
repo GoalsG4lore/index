@@ -136,3 +136,27 @@ hr {
 	margin: 0 auto;
 	display: block;
 }
+
+.footer {
+	background-color: #000000;
+	color: #808080;
+	padding: 2rem;
+	height: 50px;
+}
+
+.footerLinks {
+	text-align: center;
+}
+
+.footerLinks a {
+	color: #808080;
+	text-decoration: none;
+}
+
+.footerLinks a:hover {
+	text-decoration: underline;
+}
+
+.footer p {
+	margin: 0;
+}
