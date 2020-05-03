@@ -16,8 +16,13 @@ hr {
 
 .header {
     background: #44BB88;
+    color: #ffffff;
     display: inline-block;
     width: 100%;
+}
+
+.container__base {
+	background: #000000;
 }
 
 .heroContainer {
@@ -99,6 +104,13 @@ hr {
 
 .container__about p {
 	margin: 0;
+}
+
+.container__text {
+	background: #ffffff;
+	color: #000000;
+	padding: 1rem 2rem 1rem 2rem;
+	margin: 2rem 0 0 0;
 }
 
 .cta-button {
