@@ -15,8 +15,9 @@ hr {
 }
 
 .header {
-	margin: 0 auto;
-    max-width: 1080px;
+    background: #44BB88;
+    display: inline-block;
+    width: 100%;
 }
 
 .heroContainer {
@@ -59,10 +60,10 @@ hr {
 }
 
 .headerLink {
-	color: #ffffff;
-	text-decoration: none;
+	color: white;
+    text-decoration: none;
     display: inline-block;
-    margin: 2.5rem 2rem 0 0;
+    margin: 1.6rem 2rem 0 0;
 }
 
 .headerLink:hover {
@@ -70,19 +71,26 @@ hr {
 }
 
 .logo {
-	max-width: 90px;
-	margin-top: 1rem;
 	float: left;
+	margin-left: 11rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .headerLinks {
 	float: right;
 }
 
-.container__about h1 {
+.home__content {
+	text-align: center;
+}
+
+.home__content h1 {
 	margin-bottom: 0;
-    margin-top: 2rem;
-    font-size: 7rem;
+    margin-top: 10rem;
+    font-size: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 .container__about h2 {
@@ -125,6 +133,12 @@ hr {
 
 .box h3 {
 	text-align: center;
+}
+
+#btn__main {
+	background: #fcab10;
+	color: #ffffff;
+	float: right;
 }
 
 .btn {
