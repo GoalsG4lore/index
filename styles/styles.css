@@ -68,7 +68,7 @@ hr {
 	color: white;
     text-decoration: none;
     display: inline-block;
-    margin: 1.6rem 2rem 0 0;
+    margin: 1.2rem 2rem 0 0;
 }
 
 .headerLink:hover {
@@ -76,10 +76,8 @@ hr {
 }
 
 .logo {
-	float: left;
-	margin-left: 11rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+	width: 250px;
+    margin-left: 8rem;
 }
 
 .headerLinks {
@@ -93,9 +91,14 @@ hr {
 .home__content h1 {
 	margin-bottom: 0;
     margin-top: 10rem;
-    font-size: 3rem;
+    font-size: 4.5rem;
     margin-left: 3rem;
     margin-right: 3rem;
+}
+
+.home__content p {
+	margin: 0;
+	padding: 0;
 }
 
 .container__about h2 {
@@ -149,8 +152,9 @@ hr {
 
 #btn__main {
 	background: #fcab10;
-	color: #ffffff;
-	float: right;
+    color: #ffffff;
+    float: right;
+    font-weight: bold;
 }
 
 .btn {
@@ -167,7 +171,7 @@ hr {
     border-radius: 10px;
     text-decoration: none;
     padding-right: 0.5rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 .footer {
