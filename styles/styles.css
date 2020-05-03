@@ -157,6 +157,11 @@ hr {
     font-weight: bold;
 }
 
+#btn__main:hover {
+	background: #E39200;
+}
+	
+
 .btn {
     background: #ffffff;
     width: 150px;
