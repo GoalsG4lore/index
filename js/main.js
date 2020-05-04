@@ -16,10 +16,8 @@ function getJackpot() {
 }
 
 function showJackpot(data) {
-	console.log("HIT")
-	console.log(data);
-	var jackPot = data.Sheet1.columnNames[4];
-	$('#jackpot').html(jackPot);
+	jackpot = data.Jackpot.elements[0]["Latest Jackpot"];
+	$('#jackpot').html(jackpot);
 	setInterval(function(){ getJackpot(); }, 60000);
 }
 
