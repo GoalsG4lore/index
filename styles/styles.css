@@ -181,6 +181,8 @@ hr {
 }
 
 .navbar-toggler {
+	background: none;
+	border: 0;
 	float: right;
 	margin-top: 1.4rem;
 }
