@@ -92,9 +92,10 @@ hr {
 .home__content h1 {
 	margin-bottom: 0;
     margin-top: 10rem;
-    font-size: 4.5rem;
+    font-size: 7.7rem;
     margin-left: 3rem;
     margin-right: 3rem;
+    font-weight: bold;
 }
 
 .home__content p {
