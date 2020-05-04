@@ -170,6 +170,16 @@
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="js/plugins/bootstrap.min.js"></script>
+<script src="js/plugins/tabletop.min.js"></script>
+    <script type="text/javascript">
+    	var tabletop = Tabletop.init({ 
+		  key: '13tMhyefF5Z9oy6iIFVAY_8a46QY566NHTS1V5CpJxn4', 
+		  callback: showInfo 
+		})
+    	function showInfo(data, tabletop) {
+    		console.log(data);
+    	}
+      </script>
 <script src="js/main.js"></script>
 
 </body>
