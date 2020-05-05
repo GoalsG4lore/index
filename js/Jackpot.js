@@ -16,5 +16,4 @@ var JackPotConfig = function () {
 		$('#jackpot').html(jackpot);
 		setInterval(function(){ JackPotConf.retrieveJackpot(); }, 60000);
 	}
-
 }
