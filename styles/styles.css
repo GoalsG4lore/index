@@ -28,7 +28,7 @@ hr {
 .heroContainer {
 	background: url(../images/football-field.jpg) no-repeat center center fixed;
 	width: 100%;
-	min-height: 730px;
+	min-height: 100vh;
 	color: white;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
