@@ -26,11 +26,14 @@ hr {
 }
 
 .heroContainer {
-	background-image: url(../images/football-field.jpg);
+	background: url(../images/football-field.jpg) no-repeat center center fixed;
 	width: 100%;
 	min-height: 730px;
-	background-repeat: no-repeat;
 	color: white;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .topContainer {
