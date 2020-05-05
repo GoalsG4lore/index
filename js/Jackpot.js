@@ -14,7 +14,7 @@ var JackPotConfig = function () {
 		console.log(data)
 		jackpot = data[0]["Latest Jackpot"];
 		$('#jackpot').html(jackpot);
-		setInterval(function(){ getJackpot(); }, 5000);
+		setInterval(function(){ JackPotConf.retrieveJackpot(); }, 5000);
 	}
 
 }
