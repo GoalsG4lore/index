@@ -71,7 +71,24 @@ hr {
 	color: white;
     text-decoration: none;
     display: inline-block;
-    margin: 1.5rem 2rem 0 0;
+    margin: 1.5rem 2rem 1.25rem 0rem;
+}
+
+#headerLink-main {
+	background: #fcab10;
+	border-radius: 3px;
+	color: #ffffff;
+	padding: 0.5rem;
+	text-align: center;
+	width: 125px;
+}
+
+#headerLink-main:hover {
+	border-bottom: 0;
+}
+
+.headerLink.active {
+	border-bottom: 2px solid #ffffff;
 }
 
 .headerLink:hover {
@@ -164,7 +181,8 @@ hr {
     font-weight: bold;
 }
 
-#btn__main:hover {
+#btn__main:hover,
+#headerLink-main:hover  {
 	background: #E39200;
 }
 	
@@ -229,6 +247,12 @@ hr {
 .jackpotContainer {
 	margin: 0 auto;
 	margin-top: 12rem;
+}
+
+#jackpot {
+	display: block;
+	font-size: 5rem;
+	text-align: center;
 }
 
 @media screen and (max-width: 900px) {
