@@ -39,6 +39,11 @@ hr {
 .topContainer {
 	margin: 0 auto;
 	max-width: 1080px;
+	min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .notification {
@@ -71,7 +76,8 @@ hr {
 	color: white;
     text-decoration: none;
     display: inline-block;
-    margin: 1.5rem 2rem 1.25rem 0rem;
+    font-size: 1.75rem;
+    margin: 1.85rem 6rem 1.25rem 0rem;
 }
 
 #headerLink-main {
@@ -99,7 +105,7 @@ hr {
 
 .logo {
 	float: left;
-	width: 250px;
+	width: 350px;
     margin-left: 8rem;
 }
 
@@ -108,6 +114,8 @@ hr {
 }
 
 .home__content {
+	position: relative;
+	top: 50%;
 	text-align: center;
 }
 
@@ -177,7 +185,6 @@ hr {
 .tagline {
 	display: inline-block;
 	font-size: 8rem;
-	margin-top: 3rem;
 }
 
 #btn__main {
@@ -228,6 +235,73 @@ hr {
     background-size: 25px 20px;
 }
 
+.howItWorksContainer {
+	margin-top: 7rem;
+}
+
+.howItWorksContainer #btn__main {
+	font-size: 2rem;
+    margin: 0 auto;
+    float: none;
+    width: 100%;
+    display: block;
+    margin-top: 5rem;
+}
+
+.howItWorksSecondaryHeading {
+	text-align: center;
+    color: #fcab10;
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+
+#howItWorksHeading {
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+#howItWorksHeading::after {
+	content: "";
+    border-bottom: 5px solid #fcab10;
+    width: 450px;
+    display: block;
+    height: 20px;
+    margin: 0 auto;
+}
+
+.card {
+	border: 0;
+	padding: 3rem;
+}
+
+.card-body {
+	min-height: 220px;
+}
+
+.card-title {
+	font-size: 2.5rem;
+	text-align: center;
+}
+
+.card-img-top {
+	width: 80px;
+    margin: 0 auto;
+    display: block;
+}
+
+#selectPlayerLogo {
+	width: 80px;
+}
+
+#enjoyGameLogo {
+	width: 115px;
+}
+
+#jackpotLogo {
+	width: 138px;
+}
+
 .footer {
 	background-color: #000000;
 	color: #808080;
@@ -253,13 +327,10 @@ hr {
 .jackpotContainer {
 	margin: 0 auto;
 	margin-top: 12rem;
+	text-align: center;
+	font-size: 3rem;
 }
 
-#jackpot {
-	display: block;
-	font-size: 5rem;
-	text-align: center;
-}
 
 @media screen and (max-width: 900px) {
 
@@ -310,5 +381,9 @@ hr {
 
 	.jackpotContainer {
 		margin-top: 5rem;
+	}
+
+	.howItWorksSecondaryHeading {
+		margin: 0;
 	}
 }
