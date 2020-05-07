@@ -227,7 +227,7 @@ hr {
 	background: none;
 	border: 0;
 	float: right;
-	margin-top: 1.4rem;
+	margin-top: 2.4rem;
 }
 
 .navbar-toggler-icon {
@@ -406,15 +406,31 @@ hr {
 
 	.tagline {
 		display: block;
-		font-size: 6rem;
-		margin-top: 1.2rem;
+	    font-size: 4rem;
+	    text-align: center;
 	}
 
 	.jackpotContainer {
 		margin-top: 5rem;
 	}
 
+	.jackpotDisclaimer {
+		text-align: center;
+	}
+
 	.howItWorksSecondaryHeading {
+		margin: 0;
+	}
+
+	.card-body {
+		min-height: 150px;
+	}
+
+	.countdownContainer {
+		min-height: 0;
+	}
+
+	.howItWorksContainer #btn__main {
 		margin: 0;
 	}
 }
