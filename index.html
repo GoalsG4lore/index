@@ -56,33 +56,29 @@
 		<div class="topContainer">
 
 			<div class="row">
-				<div class="col-xs-12">
+				<div class="col-xs-6">
 					<div class="home__content">
-						<span class="tagline">4 Picks.</span> <span class="tagline">4 Goals.</span> <span class="tagline">1 Jackpot.</span>
-						<p>Click Start Game to begin choosing your picks. Read our Rules to find out how Goals G4lore works.</p>
+					<!-- 	<span class="tagline">4 Picks.</span> <span class="tagline">4 Goals.</span> <span class="tagline">1 Jackpot.</span> -->
+
+					<span class="tagline">Welcome to<br/>
+						<span class="company">Goals G4lore</span>
+					</span>
+					<br/>
+					<span class="tagline">The new <br/>Premier League online sweepstake</span>
 					</div>
-					<div class="about__content">
-							<p>Pick 4 anytime goal scorers from the weekend's Premier League football fixtures.</p>
-							<br/ >
-							<p>Pick all 4 correctly and win the Jackpot. £1.50 per entry and you can have as many goes as you like.</p>
-							<br/ >
-							<p>The deadline to submit predictions for GAMEWEEK 5 is 20:00 Friday 13th March. The jackpot is guaranteed to be at least: £78.</p>
-							<br/ >
-							<p>Note. We have introduced the Sub Pick. If any one of your original four picks does not feature during the chosen fixtures, they will be replaced with your Sub Pick.</p>
-						</p>
-					</div>
-					
+				</div>
+				<div class="col-xs-6">					
 					<div class="row">
-						<div class="col-xs-12 col-lg-6">
-							<a class="btn" id="btn__main" href="ThePOST.html">Start Game</a>
-						</div>
-
-						<div class="col-xs-12 col-lg-6">
-							<a class="btn" href="rules.html">Rules</a>
-						</div>
-
 						<div class="jackpotContainer">
-							<p>The estimated jackpot is  <span id="jackpot">...</span></p>
+							<p>Estimated Jackpot:
+								<span id="jackpot">...</span>
+							</p>
+
+						</div>
+						<p class="jackpotDisclaimer" >Click Start Game to begin choosing 4 players.
+						<br/> <a href="rules.html">Read our Rules</a> to find out how Goals G4lore works.</p>
+						<div class="col-xs-12 col-lg-12">
+							<a class="btn" id="btn__main" href="ThePOST.html">Start Game</a>
 						</div>
 					</div>
 				</div>
@@ -92,15 +88,15 @@
 		<div class="container">
 		<div class="row">
 			<div class="howItWorksContainer">
-			<h2 id="howItWorksHeading">How it works </h2>
+			<h2 id="howItWorksHeading">How to play </h2>
 				<div class="col-lg-4 col-xs-12">
 					<h3 class="howItWorksSecondaryHeading">Step One</h3>
 					<div class="card">
 						<img class="card-img-top" src="images/select-player-logo.png" id="selectPlayerLogo" alt="Card image cap">
 						<div class="card-body">
-							<h5 class="card-title">Select some players!</h5>
+							<h5 class="card-title">Select 4 players!</h5>
 							<p class="card-text">Select Start Game and start choosing up to 4 players. Each entry is £1.50 a go.</p>
-							<a class="btn" id="btn__main" href="ThePOST.html">Start Game</a>
+							<a class="btn" id="btn__main" href="ThePOST.html">Choose Players</a>
 						</div>
 
 					</div>
@@ -133,6 +129,62 @@
 			</div>
 		</div>
 		</div> <!-- end of container -->
+		<div class="row">
+			<div class="col-lg-6 col-xs-12" style="padding-right: 0">
+				<div class="countdownContainer">	
+					<p>Time remaining to select players:</p>
+				</div>
+			</div>
+			<div class="col-lg-6 col-xs-12" style="padding-left: 0">
+				<div class="countdownContainer">	
+					<p id="countdownTimer">00:00</p>
+				</div>
+			</div>
+		</div>
+
+<!-- 		<div class="container">
+		<div class="row">
+			<div class="howItWorksContainer">
+			<h2 id="howItWorksHeading">How it works </h2>
+				<div class="col-lg-4 col-xs-12">
+					<h3 class="howItWorksSecondaryHeading">Step One</h3>
+					<div class="card">
+						<img class="card-img-top" src="images/select-player-logo.png" id="selectPlayerLogo" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Select 4 players!</h5>
+							<p class="card-text">Select Start Game and start choosing up to 4 players. Each entry is £1.50 a go.</p>
+							<a class="btn" id="btn__main" href="ThePOST.html">Start Game</a>
+						</div>
+
+					</div>
+					
+				</div>
+				<div class="col-lg-4 col-xs-12">
+					<h3 class="howItWorksSecondaryHeading">Step Two</h3>
+					<div class="card">
+						<img class="card-img-top" src="images/enjoy-game-logo.png" id="enjoyGameLogo" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Enjoy the game</h5>
+							<p class="card-text">Receive an email confirmation of your entry and your picks and wait for the game to start!</p>
+							<p class="card-text">Watch the game unfold or visit our homepage to view live leaderboard to see if you are winning against others! <br/>(Don't worry, only your name and picks will be revealed).</p>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-lg-4 col-xs-12">
+					<h3 class="howItWorksSecondaryHeading">Step Three</h3>
+					<div class="card">
+						<img class="card-img-top" src="images/jackpot-logo.png"  id="jackpotLogo" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Jackpot!</h5>
+							<p>If you are a lucky winner you will the jackpot mentioned on our website! If there are multiple winners the jackpot will be shared amongst winners.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>  --><!-- end of container -->
+	
 			
 		</div>
 		<footer class="footer">

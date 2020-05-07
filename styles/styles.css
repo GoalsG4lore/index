@@ -36,14 +36,17 @@ hr {
 	background-size: cover;
 }
 
+.container__content,
 .topContainer {
 	margin: 0 auto;
 	max-width: 1080px;
+}
+
+.topContainer {
 	min-height: 100%;
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .notification {
@@ -114,9 +117,12 @@ hr {
 }
 
 .home__content {
-	position: relative;
-	top: 50%;
-	text-align: center;
+}
+
+.home__content .company {
+	background: #44BB88;
+	color: #ffffff;
+	font-weight: bold;
 }
 
 .home__content h1 {
@@ -183,14 +189,14 @@ hr {
 }
 
 .tagline {
-	display: inline-block;
-	font-size: 8rem;
+	display: block;
+	font-size: 5rem;
+	text-align: left;
 }
 
 #btn__main {
 	background: #fcab10;
     color: #ffffff;
-    float: right;
     font-weight: bold;
 }
 
@@ -202,13 +208,12 @@ hr {
 
 .btn {
     background: #ffffff;
-    width: 150px;
     padding: 1rem;
     padding-left: 0.5rem;
     color: black;
     text-align: center;
     margin: 0 auto;
-    display: inline-block;
+    display: block;
     margin-left: 1.25rem;
     margin-right: 1.25rem;
     border-radius: 10px;
@@ -216,7 +221,6 @@ hr {
     padding-right: 0.5rem;
     margin-top: 2rem;
     font-size: 2.5rem;
-    width: 300px;
 }
 
 .navbar-toggler {
@@ -302,6 +306,23 @@ hr {
 	width: 138px;
 }
 
+.countdownContainer {
+	background: #000000;
+	color: #ffffff;
+	min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.countdownContainer p {
+	font-size: 6rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+
+}
+
 .footer {
 	background-color: #000000;
 	color: #808080;
@@ -326,9 +347,19 @@ hr {
 
 .jackpotContainer {
 	margin: 0 auto;
-	margin-top: 12rem;
 	text-align: center;
 	font-size: 3rem;
+}
+
+#jackpot {
+	display: block;
+    font-size: 8rem;
+    font-weight: bold;
+}
+
+.jackpotDisclaimer a {
+	color: #ffffff;
+	text-decoration: underline;
 }
 
 
