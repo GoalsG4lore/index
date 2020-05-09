@@ -106,6 +106,34 @@ hr {
     text-decoration: none;
 }
 
+.nav-link,
+.nav-link:hover,
+.nav-link:focus {
+	color: #ffffff;
+}
+
+.nav-link:hover,
+.nav-link:focus  {
+	text-decoration: none;
+}
+
+.dropdown-menu {
+	right: 0;
+	left: initial;
+}
+
+.headerLink .dropdown-menu {
+	background: #44BB88;
+	padding: 1rem;
+}
+
+.headerLink .dropdown-item {
+	color: #ffffff;
+	display: inline-block;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
 .logo {
 	float: left;
 	width: 350px;
