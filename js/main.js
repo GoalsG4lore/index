@@ -5,24 +5,28 @@ getJackpot.retrieveJackpot();
 
 /* countdown timer */
 
-var tenMinutes = 60 * 10;
+var oneMinute = 60 * 0.25;
 
-startTimer(tenMinutes)
+startTimer(oneMinute)
 
 function startTimer(duration) {
+
     var timer = duration;
-    setInterval(function () {
-	minutes = parseInt(timer / 60, 10);
-	seconds = parseInt(timer % 60, 10);
-	minutes = minutes < 10 ? "0" + minutes : minutes;
-	seconds = seconds < 10 ? "0" + seconds : seconds;
-   	$('#countdownTimer').html(minutes + ":" + seconds);
+    timerInterval = setInterval(function () {
+		minutes = parseInt(timer / 60, 10);
+		seconds = parseInt(timer % 60, 10);
+		minutes = minutes < 10 ? "0" + minutes : minutes;
+		seconds = seconds < 10 ? "0" + seconds : seconds;
+	   	$('#countdownTimer').html(minutes + ":" + seconds);
 
-   	--timer;
+	   	console.log(timer)
+	   	
+	   	if (timer <= 0 ) {
+	   		$('#countdownTimer').text("Gameweek deadline passed");
+	   		clearInterval(timerInterval);
+	   	}
 
-   	if (timer <= 0 ) {
-   		return;
-   	}
+	   	--timer;
 
     }, 1000);
 

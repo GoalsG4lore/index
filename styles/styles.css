@@ -256,16 +256,16 @@ hr {
 	text-align: center;
     color: #fcab10;
     font-size: 3rem;
-    margin-top: 5rem;
 }
 
-#howItWorksHeading {
+.columnHeading {
 	display: block;
 	text-align: center;
 	width: 100%;
+	margin-bottom: 5rem;
 }
 
-#howItWorksHeading::after {
+.columnHeading::after {
 	content: "";
     border-bottom: 5px solid #fcab10;
     width: 450px;
@@ -307,12 +307,9 @@ hr {
 }
 
 .countdownContainer {
-	background: #000000;
+	background: #44BB88;
 	color: #ffffff;
-	min-height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	padding: 5rem 0;
 }
 
 .countdownContainer p {
@@ -362,6 +359,10 @@ hr {
 	text-decoration: underline;
 }
 
+.prostateCancerUKLogo {
+	width: 350px;
+}
+
 /* social media logos */
 
 
@@ -406,6 +407,10 @@ hr {
 		display: block;
 	}
 
+	.columnHeading::after {
+		width: 250px;
+	}
+
 	.tagline {
 		display: block;
 	    font-size: 4rem;
@@ -430,6 +435,10 @@ hr {
 
 	.countdownContainer {
 		min-height: 0;
+	}
+
+	.countdownContainer p {
+		font-size: 2rem;
 	}
 
 	.howItWorksContainer #btn__main {
