@@ -1,4 +1,5 @@
 html, body {
+	color: #333;
   	font-family: 'Arial', sans-serif;
   	margin: 0;
   	overflow-x: hidden;
@@ -22,7 +23,7 @@ hr {
 }
 
 .container__base {
-	background: #000000;
+	/*background: #000000;*/
 }
 
 .heroContainer {
@@ -177,7 +178,6 @@ hr {
 
 .container__text {
 	background: #ffffff;
-	color: #000000;
 	padding: 1rem 2rem 1rem 2rem;
 	margin: 2rem 0 0 0;
 }
@@ -268,7 +268,7 @@ hr {
 }
 
 .howItWorksContainer {
-	margin-top: 7rem;
+
 }
 
 .howItWorksContainer #btn__main {
@@ -290,7 +290,6 @@ hr {
 	display: block;
 	text-align: center;
 	width: 100%;
-	margin-bottom: 5rem;
 }
 
 .columnHeading::after {
@@ -337,7 +336,7 @@ hr {
 .countdownContainer {
 	background: #44BB88;
 	color: #ffffff;
-	padding: 5rem 0;
+	padding: 1rem 0;
 }
 
 .countdownContainer p {
@@ -346,6 +345,40 @@ hr {
 	text-transform: uppercase;
 	text-align: center;
 
+}
+
+.container__text h1,
+.container__terms__heading {
+	font-size: 5rem;
+	text-align: center;
+	font-weight: bold;
+}
+
+.container__rules {
+	padding: 1rem;
+	margin: 3.5rem 0;
+}
+
+.container__rules h3 {
+	position: relative;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.container__rules h3::after {
+	content: "";
+    border-bottom: 3px solid #fcab10;
+    display: block;
+    height: 17px;
+}
+
+.container__rules li {
+	font-size: 1.75rem;
+    line-height: 3.5rem;
+}
+
+.container__terms__heading {
+	display: block;
 }
 
 .footer {

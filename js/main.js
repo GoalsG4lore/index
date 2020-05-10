@@ -22,7 +22,8 @@ function startTimer(duration) {
 	   	console.log(timer)
 	   	
 	   	if (timer <= 0 ) {
-	   		$('#countdownTimer').text("Gameweek deadline passed");
+	   		$('#countdownTimer').text("Gameweek deadline passed.");
+
 	   		clearInterval(timerInterval);
 	   	}
 
