@@ -225,8 +225,21 @@ hr {
 #btn__main {
 	background: #fcab10;
     color: #ffffff;
-    font-weight: bold;
 }
+
+#btn__main--info {
+	background: #2b9eb3;
+	color: #ffffff;
+}
+
+#btn__main--info:hover {
+	background: #12859A;
+}
+
+#btn__secondary {
+
+}
+
 
 #btn__main:hover,
 #headerLink-main:hover  {
@@ -249,6 +262,7 @@ hr {
     padding-right: 0.5rem;
     margin-top: 2rem;
     font-size: 2.5rem;
+    font-weight: bold;
 }
 
 .navbar-toggler {
@@ -379,6 +393,21 @@ hr {
 
 .container__terms__heading {
 	display: block;
+}
+
+.container__text--thank-you {
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+.container__text--thank-you p {
+	font-size: 2rem;
+}
+
+.container__text--thank-you h2 {
+	font-size: 10rem;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 .footer {

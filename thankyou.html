@@ -4,73 +4,82 @@
 <head>
 	<meta charset="utf-8">
 	<!-- <meta name="description" content> -->
-	<title>Thank You for Submitting - Goals G4lore</title>
-	
-	<link rel="icon" type="image/png" href="images/goals-g4lore-favicon.png">
+	<title>Goals G4lore - New competition between friends, work colleagues and sports clubs.</title>
+
+    <link rel="icon" type="image/png" href="images/goals-g4lore-favicon.png">
     <link rel="shortcut icon" href="images/goals-g4lore-favicon.png">
 
  	<link rel="stylesheet" type="text/css" href="styles/plugins/bootstrap.min.css">
 
+<!-- 	<link rel="stylesheet" type="text/css" href="styles/flexbox.css"> -->
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-
-<div class="container__base">
-	<div class="row">
-		<div class="col-xs-12">
-			<div class="header">
-				<nav class="navbar-expand-lg">
-				<a href="index.html">
-					<img class="logo" src="images/goals-galore-logo.png">
-				</a>
-				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				    <span class="navbar-toggler-icon">		
-					</span>
-				  </button>
-				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<div class="headerLinks">
-						<a href="rules.html" class="headerLink" id="">Rules</a>
-						<a href="ThePOST.html" class="headerLink" id="headerLink-main">Start Game</a>
-						<a href="fixtures.html" class="headerLink" id="">Fixtures</a>
-						<a href="hallOfFame.html" class="headerLink" id="">FAQ</a>
-						<a href="#" class="headerLink" id="aboutLink">Contact</a>
-						<li class="dropdown headerLink">
-					        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
-					        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					          <a class="dropdown-item" href="#">Gameweek Results</a>
-					          <a class="dropdown-item" href="#">Hall of Fame</a>
-				        	</div>
-			      		</li>
-					</div>
-				  </div>
-				</nav>
-			</div>
+<!-- 	<div class="notification">
+		<div class="notificationHeader">
+			<div class="notificationHeaderTitle"><p>ATTENTION<p></div>
+			<div id="notificationClose" class="notificationHeaderClose"><p>Close<p></div>
 		</div>
-	</div>
-		<div class="container__content">
+		<p class="notificationText">All professional football has been postoned because of the Coronavirus pandemic. As a result, the GOALS G4LORE competition will also be postponed until the resumption of the English Premier League.</p> 
+		<p>Please visit regulary for further announcements.</p>
+	</div> -->
+
 			<div class="row">
 				<div class="col-xs-12">
-					<div class="container__text">
-						<h2>Your selection has successfully been submitted</h2>
-
-							<p>
-
-							<p>Brilliant stuff. Your picks have been submitted and have been added to this week's gameweek fixtures.</p>
-
-							<p>View your selection against other players on the home page</p>
-
-							<p>Fancy choosing more players? Return back to the player selection tool</p>
-
-							<p>Raise the jackpot for free by referring a friend!</p>
-
+					<div class="header">
+						<nav class="navbar-expand-lg">
+						<a href="index.html">
+							<img class="logo" src="images/goals-galore-logo.png">
+						</a>
+						  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						    <span class="navbar-toggler-icon">		
+							</span>
+						  </button>
+						  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<div class="headerLinks">
+								<a href="rules.html" class="headerLink" id="">Rules</a>
+								<a href="ThePOST.html" class="headerLink" id="headerLink-main">Start Game</a>
+								<a href="fixtures.html" class="headerLink" id="">Fixtures</a>
+								<a href="hallOfFame.html" class="headerLink" id="">FAQ</a>
+								<a href="#" class="headerLink" id="aboutLink">Contact</a>
+								<li class="dropdown headerLink">
+							        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+							        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							          <a class="dropdown-item" href="#">Gameweek Results</a>
+							          <a class="dropdown-item" href="#">Hall of Fame</a>
+						        	</div>
+					      		</li>
+							</div>
+						  </div>
+						</nav>
 					</div>
 				</div>
 			</div>
+			<div class="container__text--thank-you">
+				<div>
+					<h2>Selection Submitted</h2>
+
+						<p>Thank You. Your picks have been received and have been added to this week's gameweek fixtures.</p>
+
+						<p>Place another entry by clicking below. Alternatively, refer a friend if you haven't done so already so you get your next go free and to increase the jackpot!</p>
+
+						<div class="row">
+							<div class="container__content">
+								<div class="col-xs-12 col-lg-6">
+									<a class="btn btn__main" id="btn__main" href="ThePOST.html">Make another selection</a>
+								</div>
+								<div class="col-xs-12 col-lg-6">
+									<a class="btn btn__main" id="btn__main--info" href="#">Refer a friend</a>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>	
 		</div>
-	</div>
+
 		<footer class="footer">
 			<div class="row">
 				<div class="container">
@@ -88,10 +97,11 @@
 			</div>
 			</div>
 		</footer>
-		
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="js/plugins/bootstrap.min.js"></script>
+<script src="js/plugins/tabletop.min.js"></script>
+<script src="js/Jackpot.js"></script>
 <script src="js/main.js"></script>
 
 </body>
