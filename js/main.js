@@ -1,34 +1,34 @@
-/* firing Jackpot */
+/* fetching data from sheets */
 
-var getJackpot = new JackPotConfig();
-getJackpot.retrieveJackpot();
+var getData = new RetrieveDataConfig();
+
 
 /* countdown timer */
 
-var oneMinute = 60 * 0.25;
+// var oneMinute = 60 * 0.25;
 
-startTimer(oneMinute)
+// startTimer(oneMinute)
 
-function startTimer(duration) {
+// function startTimer(duration) {
 
-    var timer = duration;
-    timerInterval = setInterval(function () {
-		minutes = parseInt(timer / 60, 10);
-		seconds = parseInt(timer % 60, 10);
-		minutes = minutes < 10 ? "0" + minutes : minutes;
-		seconds = seconds < 10 ? "0" + seconds : seconds;
-	   	$('#countdownTimer').html(minutes + ":" + seconds);
+//     var timer = duration;
+//     timerInterval = setInterval(function () {
+// 		minutes = parseInt(timer / 60, 10);
+// 		seconds = parseInt(timer % 60, 10);
+// 		minutes = minutes < 10 ? "0" + minutes : minutes;
+// 		seconds = seconds < 10 ? "0" + seconds : seconds;
+// 	   	$('#countdownTimer').html(minutes + ":" + seconds);
 
-	   	console.log(timer)
+// 	   	console.log(timer)
 	   	
-	   	if (timer <= 0 ) {
-	   		$('#countdownTimer').text("Gameweek deadline passed.");
+// 	   	if (timer <= 0 ) {
+// 	   		$('#countdownTimer').text("Gameweek deadline passed.");
 
-	   		clearInterval(timerInterval);
-	   	}
+// 	   		clearInterval(timerInterval);
+// 	   	}
 
-	   	--timer;
+// 	   	--timer;
 
-    }, 1000);
+//     }, 1000);
 
-}
+// }
