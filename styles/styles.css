@@ -19,7 +19,9 @@ hr {
     background: #44BB88;
     color: #ffffff;
     display: inline-block;
+    position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 .container__base {
@@ -41,6 +43,7 @@ hr {
 .topContainer {
 	margin: 0 auto;
 	max-width: 1080px;
+	margin-top: 74px;
 }
 
 .topContainer {
