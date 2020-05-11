@@ -3,7 +3,6 @@ var RetrieveDataConfig = function () {
 	var RetrieveDataConf = this;
 
 	function retrieveData() {
-		console.log("HIT")
 		var tabletop = Tabletop.init({ 
 				key: '13tMhyefF5Z9oy6iIFVAY_8a46QY566NHTS1V5CpJxn4', 
 				callback: showData,

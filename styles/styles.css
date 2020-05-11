@@ -269,7 +269,7 @@ hr {
 	background: none;
 	border: 0;
 	float: right;
-	margin-top: 2.4rem;
+	margin-top: 1.5rem;
 }
 
 .navbar-toggler-icon {
@@ -396,7 +396,7 @@ hr {
 }
 
 .container__text--thank-you {
-    text-align: center;
+        text-align: center;
     margin-top: 150px;
     margin-bottom: 100px;
 }
@@ -487,6 +487,7 @@ hr {
 
 	.logo {
 		margin-left: 0;
+		width: 250px;
 	}
 
 	.navbar-collapse {
