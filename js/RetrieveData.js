@@ -3,11 +3,14 @@ var RetrieveDataConfig = function () {
 	var RetrieveDataConf = this;
 	RetrieveDataConf.jackPotData = ko.observable();
 	RetrieveDataConf.countdown = ko.observable();
+	RetrieveDataConf.loading = ko.observable(false);
 	RetrieveDataConf.currentGameweek = ko.observableArray([]);
 
 	var gameWeekArray = [];
 
 	RetrieveDataConf.retrieveData = function() {
+		RetrieveDataConf.loading(true);
+		console.log(RetrieveDataConf.loading())
 		var tabletop = Tabletop.init({ 
 				key: '13tMhyefF5Z9oy6iIFVAY_8a46QY566NHTS1V5CpJxn4', 
 				callback: RetrieveDataConf.callBackData,
@@ -15,6 +18,8 @@ var RetrieveDataConfig = function () {
 	};
 		
 	RetrieveDataConf.callBackData = function(data) {
+		RetrieveDataConf.loading(false);
+		console.log(RetrieveDataConf.loading())
 		/* for jackpot */
 		var jackPot = data.Jackpot.elements[0]["Latest Jackpot"];
 		RetrieveDataConf.jackPotData(jackPot);

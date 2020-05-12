@@ -40,10 +40,6 @@
 								<a href="#" class="headerLink" id="aboutLink">Contact</a>
 								<li class="dropdown headerLink">
 							        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
-							    <!--     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							          <a class="dropdown-item" href="#">Gameweek Results</a>
-							          <a class="dropdown-item" href="#">Hall of Fame</a>
-						        	</div> -->
 					      		</li>
 							</div>
 				  </div>
@@ -56,7 +52,8 @@
 				<div class="col-xs-12">
 					<div class="container__text">
 						<h1>Current Gameweek</h1>
-							<table class="table__currentGW">
+							<img src="images/loading.gif" class="table__currentGW__loading" data-bind="css: {'d-none': !loading() }">
+							<table class="table__currentGW" data-bind="css: {'d-none': loading }">
 								<thead>
 								<tr>
 									<th>Ref</th>
