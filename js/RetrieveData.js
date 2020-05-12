@@ -2,6 +2,7 @@ var RetrieveDataConfig = function () {
 
 	var RetrieveDataConf = this;
 	RetrieveDataConf.jackPotData = ko.observable();
+	RetrieveDataConf.countdown = ko.observable();
 	RetrieveDataConf.currentGameweek = ko.observableArray([]);
 
 	RetrieveDataConf.retrieveData = function() {
@@ -11,12 +12,8 @@ var RetrieveDataConfig = function () {
 		});
 	};
 		
-		people = [
-            { firstName: 'Bert', lastName: 'Bertington' },
-            { firstName: 'Charles', lastName: 'Charlesforth' },
-            { firstName: 'Denise', lastName: 'Dentiste' }
-        ]
 	RetrieveDataConf.callBackData = function(data) {
+
 		/* for jackpot */
 		var jackPot = data.Jackpot.elements[0]["Latest Jackpot"];
 		RetrieveDataConf.jackPotData(jackPot);
@@ -25,6 +22,10 @@ var RetrieveDataConfig = function () {
 		var currentGameweek = data["Current Gameweek"].elements;
 		currentGameweek.shift() //removing first item in array (which are the headers)
 		RetrieveDataConf.currentGameweek([currentGameweek])
+
+		/* for countdown */
+		var countdown = data["Deadline"].elements[0]["Time Until Deadline"];
+		RetrieveDataConf.countdown(countdown);
 	};
 
 }
