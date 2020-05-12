@@ -43,7 +43,7 @@
 							<div class="headerLinks">
 								<a href="rules.html" class="headerLink" id="">Rules</a>
 								<a href="ThePOST.html" class="headerLink" id="headerLink-main">Start Game</a>
-								<a href="#" class="headerLink" id="">Fixtures</a>
+								<a href="currentGameweek.html" class="headerLink" id="">Current Gameweek</a>
 								<a href="#" class="headerLink" id="">FAQ</a>
 								<a href="#" class="headerLink" id="aboutLink">Contact</a>
 								<li class="dropdown headerLink">
@@ -77,7 +77,7 @@
 					<div class="row">
 						<div class="jackpotContainer">
 							<p>Estimated Jackpot:
-								<span id="jackpot">...</span>
+								<span id="jackpot" data-bind="text: jackPotData">...</span>
 							</p>
 
 						</div>
@@ -209,10 +209,13 @@
 		</footer>
 
 <script src="js/plugins/jquery.js"></script>
+<script type="text/javascript" src="js/plugins/knockout.js"></script>
 <script src="js/plugins/bootstrap.min.js"></script>
 <script src="js/plugins/tabletop.min.js"></script>
+
 <script src="js/RetrieveData.js"></script>
 <script src="js/main.js"></script>
+<script src="js/Jackpot.js"></script>
 <script src="js/FixtureData.js"></script>
 
 </body>

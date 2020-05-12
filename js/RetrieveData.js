@@ -1,34 +1,39 @@
 var RetrieveDataConfig = function () {
 
 	var RetrieveDataConf = this;
+	RetrieveDataConf.jackPotData = ko.observable();
+	RetrieveDataConf.currentGameweek = ko.observableArray([]);
 
-	function retrieveData() {
+	RetrieveDataConf.retrieveData = function() {
 		var tabletop = Tabletop.init({ 
 				key: '13tMhyefF5Z9oy6iIFVAY_8a46QY566NHTS1V5CpJxn4', 
-				callback: showData,
-				// debug: true,
+				callback: RetrieveDataConf.callBackData,
 		});
 	};
-
-	function showData (data, object) {
-		console.log(data);
-
+		
+		people = [
+            { firstName: 'Bert', lastName: 'Bertington' },
+            { firstName: 'Charles', lastName: 'Charlesforth' },
+            { firstName: 'Denise', lastName: 'Dentiste' }
+        ]
+	RetrieveDataConf.callBackData = function(data) {
 		/* for jackpot */
-		jackpot = data.Jackpot.elements[0]["Latest Jackpot"];
-		$('#jackpot').html(jackpot);
+		var jackPot = data.Jackpot.elements[0]["Latest Jackpot"];
+		RetrieveDataConf.jackPotData(jackPot);
 
-		/* for deadline */
-		deadline = data.Deadline.elements[0]["Time Until Deadline"];
-		$('#countdownTimer').html(deadline);
-
-		setTimeout(function() {
-			retrieveData();
-		}, 60000); //300000 MS == 5 minutes
-	}
-
-$(function() {
-	retrieveData();
-});
+		/* for current gameweek */
+		var currentGameweek = data["Current Gameweek"].elements;
+		currentGameweek.shift() //removing first item in array (which are the headers)
+		RetrieveDataConf.currentGameweek([currentGameweek])
+	};
 
 }
+
+$(function(){
+	var fetchData = new RetrieveDataConfig();
+	fetchData.retrieveData();
+	ko.applyBindings(fetchData);
+});
+
+
 
